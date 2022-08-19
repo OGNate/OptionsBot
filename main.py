@@ -1,8 +1,11 @@
 import os
+from dotenv import load_dotenv
 
 
 def main():
-   print(os.getcwd()) 
+   test_thing = os.getenv('TEST')
+   print(test_thing)
 
 if __name__ == "__main__":
-    main()
+   load_dotenv()  # Loads the .env file
+   main()
